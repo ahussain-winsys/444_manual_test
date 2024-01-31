@@ -6,9 +6,9 @@ OBJS_64         := $(SRCS:.c=.o64)
 TARGET_32       := emuc_32
 TARGET_64       := emuc_64
 LIBS_32         := lib_emuc2_32.a -m32 -lpthread -lm
-LIBS_64         := lib_emuc2_64.a -m64 -lpthread -lm
+LIBS_64         := lib_emuc2_64.a -march=armv8-a -lpthread -lm
 CFLAGS_32       := -m32 -Wall -I ./include
-CFLAGS_64       := -m64 -Wall -I ./include
+CFLAGS_64       := -march=armv8-a -Wall -I ./include
 LDFLAGS_32      := $(LIBS_32)
 LDFLAGS_64      := $(LIBS_64)
 
