@@ -7,8 +7,8 @@ def main():
     
     status = False
     gpiochip = "gpiochip0"
-    gpolist = [0,3]
-    gpilist = [5,6]
+    gpolist = [0,1]
+    gpilist = [3,5]
     outlines = []
     inlines = []
     
@@ -28,7 +28,7 @@ def main():
     outlines.request(outcfg)
     inlines.request(incfg)
     
-    for x in range(8):
+    for x in range(4):
         val = [int(i) for i in list('{0:0b}'.format(x))]
         while len(val) is not len(outlines):
             val.insert(0,0)
