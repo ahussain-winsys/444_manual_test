@@ -474,7 +474,7 @@ static void print_data(CAN_FRAME_INFO frame_info, bool is_send, bool is_new)
 
   if(is_new)
   {
-    system("clear");
+    //system("clear");
     printf("Round %u:\n", round);
     printf("===========");
     round++;
