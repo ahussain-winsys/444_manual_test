@@ -1,5 +1,5 @@
 #!/bin/bash
 
-sudo iw wlan0 up
+sudo ip link set wlan0 up
 sudo iw wlan0 scan | grep -B 9 "WSGuest" | grep "signal"
-sudo iw wlan0 down
+sudo ip link set wlan0 down
