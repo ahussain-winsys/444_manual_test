@@ -28,7 +28,7 @@ def main():
     outlines.request(outcfg)
     inlines.request(incfg)
     
-    for x in range(4):
+    for x in range(8):
         val = [int(i) for i in list('{0:0b}'.format(x))]
         while len(val) is not len(outlines):
             val.insert(0,0)
